@@ -1,0 +1,440 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form Using Table in HTML</title>
+    <style>
+        body{
+            margin: 10px;
+            padding: 5px;
+        }
+
+       form h2 {
+            font-family: Sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: bold;
+            color: blue;
+            text-align: center;
+            text-decoration: underline
+        }
+
+        table {
+            font-family: verdana;
+            color: black;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: bold;
+            background: linear-gradient(to bottom);
+            border-collapse: collapse;
+            border-radius: 25px;
+           border-color:#57e72b;
+            border-style: 5px, groove ;
+        }
+
+            .School_name
+            {
+                font-family:Arial;
+                text-align: center;
+                color: #000000;
+                position:center;
+                align-items: center;
+            }
+
+       table.inner
+       {
+         border: 10px;
+         border: #57e72b;
+         
+       }
+
+       /* .trtd 
+       {
+         color: #57a0db;
+         
+       } */
+       .photo input[type=image]
+       {
+           background-color:white;
+       }
+
+
+        input[type=text], input[type=email], input[type=number] {
+            width: 50%;
+            padding: 6px 12px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+
+        input[type=submit], input[type=reset] {
+            width: 15%;
+            padding: 8px 12px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            font-size: large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: aqua;
+            background-color:#858d90 ;
+        }
+        input[type=reset]{
+            background-color: rgb(177, 99, 99);
+        }
+
+        section.alert {
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            align-items: center;
+         
+        }
+        .School_name h1,h3{
+            color: rgb(10, 201, 67);
+        }
+        .School_name h5 {
+            color: rgb(231, 62, 39);
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <h2>
+            Student Application Form
+        </h2>
+        <table align="center" class="trtd" >
+            <!--------------------- School_name  ---------------------->
+            <tr>
+                <td class="School_name" align="center" colspan="2" style="line-height: 7px;">
+                    <h1>Kanchanpur High School</h1>
+                    <h5>Establishhed-1933</h5>
+                    <h3>Shapalipar,Ramgonj,Lakshmipur.</h3>
+
+                </td>
+            </tr>
+            <!---------------------Photo ---------------------->
+            <tr class="upload-box">
+                <td> Student Photo</td>
+
+                <td class="photo" >
+                    <input type="file"  alt="Upload Photo">
+                </td>
+
+            </tr>
+            <!--------------------- Student Name ---------------------->
+            <tr>
+                <td>Student Name</td>
+                <td>
+                    <input type="text" name="FirstName" placeholder="Name" />
+                </td>
+                
+                
+            </tr>
+            <!------------------------ Father Name --------------------------------------->
+            <tr>
+                <td>Father's' Name</td>
+                <td>
+                    <input type="text" name="LastName" placeholder="Name" />
+
+                </td>
+            </tr>
+            <!------------------------ Mother Name --------------------------------------->
+            <tr>
+                <td>Mother's' Name</td>
+                <td>
+                    <input type="text" name="LastName" placeholder="Name" />
+
+                </td>
+            </tr>
+            <!-------------------------- Email ID ------------------------------------->
+            <tr>
+                <td>Email ID</td>
+                <td><input type="email" name="EmailID" placeholder="gmail.com" /></td>
+            </tr>
+            <!-------------------------- Mobile Number ------------------------------------->
+            <tr>
+                <td>Mobile Number</td>
+                <td>
+                    <input type="text" name="MobileNumber" placeholder="xxxxxx" />
+
+                </td>
+            </tr>
+            <!---------------------- Gender ------------------------------------->
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="Gender" value="Male" />
+                    Male
+                    <input type="radio" name="Gender" value="Female" />
+                    Female
+                </td>
+            </tr>
+            <!--------Religion------->
+            
+            <tr>
+                <td>Religion:</td>
+                <td>
+
+                    <datalist id="Region_List">
+                        <option value="Bangladesh"></option>
+                        <option value="India"></option>
+                        <option value="Japan"></option>
+                        <option value="China"></option>
+                    </datalist>
+                    <input type="text" name="Region" list="Region_List" />
+
+                </td>
+            </tr>
+            <!--------------------------Date Of Birth----------------------------------->
+            <tr>
+                <td>Date of Birth(DOB)</td>
+                <td>
+                    <select name="BirthDay" id="Birthday_Day">
+                        <option value="-1">Day:</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <select name="BirthdayMonth" id="Birthday_Month">
+                        <option value="-1">Month:</option>
+                        <option value="January">Jan(1)</option>
+                        <option value="February">Feb(2)</option>
+                        <option value="March">Mar(3)</option>
+                        <option value="April">Apr(4)</option>
+                        <option value="May">May(5)</option>
+                        <option value="June">Jun(6)</option>
+                        <option value="July">Jul(7)</option>
+                        <option value="August">Aug(8)</option>
+                        <option value="September">Sep(9)</option>
+                        <option value="October">Oct(10)</option>
+                        <option value="November">Nov(11)</option>
+                        <option value="December">Dec(12)</option>
+                    </select>
+                    <select name="BirthdayYear" id="Birthday_Year">
+                        <option value="-1">Year:</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                        <option value="2003">2003</option>
+                        <option value="2002">2002</option>
+                        <option value="2001">2001</option>
+                        <option value="2000">2000</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!---------------------- Admission Date ---------------->
+            <tr>
+                <td>Admission Date</td>
+                <td>
+                    <input type="date" name="AdmissionDate" />
+                </td>
+            </tr>
+            <!--------------------------Favorite Color----------------------------------->
+            <tr>
+                <td>Favorite Color:</td>
+                <td>
+                    <input type="color" id="color" name="color" required placeholder="Enter your favorite color">
+                </td>
+
+            </tr>
+            <!-------------------------Your Age----------------------------------->
+
+            <tr>
+                <td>Your Age:</td>
+                <td>
+                    <input type="number" id="age" name="age" min="15" max="35" required placeholder="Enter your age">
+
+                </td>
+            </tr>
+            <!--------------------------Certificate----------------------------------->
+
+            <tr>
+                <td>
+                    <label for="certificate">Add Certificate:</label>
+
+                </td>
+                <td>  <input type="file" id="certificate" name="certificate"></td>
+            </tr>
+            <!--------------------------For Class----------------------------------->
+
+            <tr>
+                <td>
+                    <label for="excitement">Excited For New Class:</label>
+                </td>
+                <td> <input type="range" id="excitement" name="excitement" min="10" max="100" step="10" required></td>
+            </tr>
+
+            <!------------------------- Address ---------------------------------->
+            <tr>
+                <td> Present Address<br /><br /><br /></td>
+                <td><textarea name="Address" rows="5" cols="40"></textarea></td>
+            </tr>
+            <!-------------------------- City ------------------------------------->
+            <tr>
+                <td>City</td>
+                <td>
+                    <input type="text" name="City" placeholder="City" />
+
+                </td>
+            </tr>
+            <!----- -------------------- Zip Code-------------------------------------->
+            <tr>
+                <td>Zip Code</td>
+                <td>
+                    <input type="Number" name="PinCode" placeholder="Code" />
+
+                </td>
+            </tr>
+            <!---------------------------- State ----------------------------------->
+            <tr>
+                <td>State</td>
+                <td>
+                    <input type="text" name="State" maxlength="50" placeholder="State" />
+                </td>
+            </tr>
+            <!------------------------------ Country --------------------------------->
+            <tr>
+                <td>Country</td>
+                <td><input type="text" name="Country" placeholder="Country" /></td>
+            </tr>
+            <!------------------------- Hobbies -------------------------------------->
+            <tr>
+                <td>Hobbies </td>
+                <td>
+                    <input type="checkbox" name="HobbyDrawing" value="Drawing" />
+                    Playing Footall
+                    <input type="checkbox" name="HobbySinging" value="Singing" />
+                    Playing Cricket
+                    <input type="checkbox" name="HobbyDancing" value="Dancing" />
+                    Travelling
+
+                    <br />
+                </td>
+            </tr>
+            <!-----------------------Class---------------------------------------->
+            <tr>
+                <td><br /> <br />Class <br /><br /><br /></td>
+                <td>
+                    <br />
+                    <input type="radio" name="HighSchool" value="Six" />Class-Six.
+                    <input type="radio" name="HighSchool" value="Six" />Class-Seven.
+                    <input type="radio" name="HighSchool" value="Six" />Class-Eightr<br />
+                    <input type="radio" name="HighSchool" value="Six" />Class-Nine
+                    <input type="radio" name="HighSchool" value="Six" />Class-Ten
+
+                </td>
+            </tr>
+            <!-----------------------Classtine---------------------------------------->
+             <tr>
+                <td><br />Class Time Start:</td>
+                 <td>
+                     <input type="datetime-local" name="localDateTime" />
+
+                 </td>
+             </tr>
+            <!---------------------------- Subject ----------------------------------->
+            <tr>
+                <td><br />Choise Subject</td>
+                <td>
+                    <input type="checkbox" name="sub" value="Sub">Bangla.
+                    <input type="checkbox" name="sub" value="Sub">English.
+                    <input type="checkbox" name="sub" value="Sub">Meth.<br />
+                    <input type="checkbox" name="sub" value="Sub">Science.
+                    <input type="checkbox" name="sub" value="Sub">Social-science.
+                    <input type="checkbox" name="sub" value="Sub">ICT.<br />
+                </td>
+            </tr>
+
+            <!-------------Socail site--------------------->
+            <tr>
+                <td><br />Social Site URL:</td>
+                <td>
+
+                    <input type="url" name="yourSite" placeholder="url link" />
+
+                </td>
+            </tr>
+               
+            <!----------Say Something for our School-------->
+            <tr>
+                <td>Say Something for our School [A-Za-z0-9]{6} :</td>
+                <td>
+                    <input type="text" pattern="[A-Za-z0-9]{6}">
+                </td>
+
+            </tr>
+                     <!----------Say  declare------------>
+            <tr>
+                <td colspan="2">
+                    <input class="rounded-checkbox" data-val="true" data-val-required="The IsAgreed field is required." type="checkbox" value="true" /><input name="IsAgreed" type="hidden" value="false" />
+                    <label class="form-check-label" for="declare">
+                        <b>I declare that all the information provided by me in this Application is true.</b>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input class="rounded-checkbox" data-val="true" data-val-required="The IsAgreed field is required." id="IsAgreed" name="IsAgreed" type="checkbox" value="true" /><input name="IsAgreed" type="hidden" value="false" />
+                    <label class="form-check-label" for="declare">
+                        <b>I agree to abide by the terms and conditions set forth by the institution.</b>
+                    </label>
+                </td>
+            </tr>
+            <!----------------------- Submit and Reset ------------------------------->
+            <tr style="text-align: center;">
+                <td class="Button" colspan="5">
+                    <a href="payment.html"><input type="submit" value="Submit"></a>
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="5">
+                    <p>If you went to take admission in this school plz pay admission fee</p>
+                    <a href="payment.html"><h4>Admission Fee</h4> </a>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

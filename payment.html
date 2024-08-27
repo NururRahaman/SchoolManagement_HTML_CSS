@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        .payment-options {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 5px;
+        }
+
+            .payment-options label {
+                display: flex;
+                font-weight: bold;
+            }
+
+        .bkash-inputs,
+        .transaction-section {
+            margin-top: 20px;
+            display: block;
+        }
+
+
+            .transaction-section label {
+                margin-right: 10px;
+                font-weight: bold;
+            }
+
+        section {
+            background-color: #cc8e8e;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <div class="alert">
+            <center><b>After you click on the Submit box shown below you will be able to proceed with the payment.</b></center>
+        </div><br /> <br />
+        <div class="payment-options">
+            <label><b>Payment Option</b></label>
+            <div class="webPayment">
+                <input id="webPayment" name="PaymentOption" type="radio" value="1" />
+                <b>Pay with Bkash</b>
+                <div class="bkash-inputs">
+                    <label>Bkash Account No:</label>
+                    <input class="form-control" id="bkashAccNo" name="bkashAccNo" type="tel" placeholder="Enter Bkash Account No">
+                    <label>Amount:</label>
+                    <input class="form-control" id="amount" name="amount" type="number" min="500" placeholder="Enter Amount">
+                    <label>Merchant No:</label>
+                    <input class="form-control" id="merchantNo" name="merchantNo" type="tel" placeholder="Enter Merchant No">
+                    <label>Bkash PIN:</label>
+                    <input class="form-control" id="bkashPin" name="bkashPin" type="password" placeholder="Enter Bkash PIN">
+                    <button type="button" onclick="alert('Submitted')">Submit</button>
+                </div>
+            </div>
+            <div class="localPayment">
+                <input id="localPayment" name="PaymentOption" type="radio" value="2" />
+                <b>Already paid and have a Transaction Id</b>
+                <div class="transaction-section">
+                    <label>Transaction Id</label>
+                    <input class="form-control" id="TransactionId" name="TransactionId" placeholder="Trx ID" type="text" value="">
+                    <button type="button" onclick="alert('Submitted')">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div >
+            <a class="back" href="index.html"><h4>Back Home</h4></a>
+        </div>
+        
+    </div>
+
+        </div>
+    </section>
+</body>
+</html> 

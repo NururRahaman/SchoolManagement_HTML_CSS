@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title></title>
+    <style>
+
+.events-box {
+width: 60%;
+height: 460px;
+color: chartreuse;
+font-size: large;
+margin:solid black;
+background-image: url(imagess/d22.jpg);
+}
+      .event-container .date>span .month{
+	color: rgb(163,169,72);
+}
+
+.event-container .date>span .day{
+	font-size: 1.5em;
+}
+
+.event-container .event-text{
+	margin-left: 1rem;
+}
+.back{
+    position:right;
+    color: rgb(225, 45, 45);
+}
+#events{
+	padding: 0 2rem
+}
+    </style>
+</header>
+<body>
+    
+   <!-- Events -->
+   <div class="events-box" id="events">
+     <div class="events-content">
+         <div class="widgets-title"><h2>Events</h2></div>
+             <ul id="events-list">
+            <li>
+                <!-- Events -->
+                <div class="event-container">
+                    <!-- Date -->
+                    <div class="date">
+                            <span>
+                                <!-- Day -->
+                                <div class="day">9</div>
+                                <!-- Month Short Form (first three letters) -->
+                                <div class="month">Apr</div>
+                            </span>
+                    </div>
+                    <!-- Event-Description -->
+                    <div class="event-text">First Annual Institute Day</div>
+                </div>
+            </li>
+            <li>
+                <div class="event-container">
+                    <!-- Date -->
+                    <div class="date">
+                                <span>
+                                    <!-- Day -->
+                                    <div class="day">12</div>
+                                    <!-- Month Short Form (first three letters) -->
+                                    <div class="month">Mar</div>
+                                </span>
+                    </div>
+                    <!-- Event-Description -->
+                    <div class="event-text">Hackathon 2016</div>
+                </div>
+            </li>
+            <li>
+                <div class="event-container">
+                    <!-- Date -->
+                    <div class="date">
+                                <span>
+                                    <!-- Day -->
+                                    <div class="day">5</div>
+                                    <!-- Month Short Form (first three letters) -->
+                                    <div class="month">Mar</div>
+                                </span>
+                    </div>
+                    <!-- Event-Description -->
+                    <div class="event-text">Sports Festival Ventura 2016</div>
+                </div>
+            </li>
+            <li>
+                <div class="event-container">
+                    <!-- Date -->
+                    <div class="date">
+                                <span>
+                                    <!-- Day -->
+                                    <div class="day">26</div>
+                                    <!-- Month Short Form (first three letters) -->
+                                    <div class="month">Jan</div>
+                                </span>
+                    </div>
+                    <!-- Event-Description -->
+                    <div class="event-text">Republic Day</div>
+                </div>
+            </li>
+            <li>
+                <div class="event-container">
+                    <!-- Date -->
+                    <div class="date">
+                                <span>
+                                    <!-- Day -->
+                                    <div class="day">14</div>
+                                    <!-- Month Short Form (first three letters) -->
+                                    <div class="month">Jan</div>
+                                </span>
+                    </div>
+                    <!-- Event-Description -->
+                    <div class="event-text">Nabhyaan: A festival of kite</div>
+                </div>
+            </li>
+
+          </ul>
+          <div id="events-list-pagination">
+            <a id="events-list-previous" href="#">
+                <span><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+
+             </a>
+             <a id="events-list-next" href="#">
+                <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+            </a>
+          </div>
+
+       </div>
+       <a class="back" href="index.html"><h4>Back Home</h4></a>
+   </div>
+
+
+
+
+</body>
+
+</html>
+       
+    
